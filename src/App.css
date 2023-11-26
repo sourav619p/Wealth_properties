@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&family=Noto+Serif+Balinese&family=Nunito:wght@500&display=swap');
+body{
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Serif Balinese', serif;
+font-family: 'Nunito', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section{
+  margin: 0%;
+  width: 100%;
+  height: 92vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.getstartbtn{
+  background-image: linear-gradient(to right, #12C2E9 0%, #C471ED 51%, #c9124c
+   100%);
+  border-radius: 3px;
+  border: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.mainpict{
+  position: relative;
+  top: 1%;
+  left: 48%;
+  transform: translateX(-50%);
 }
 
-.App-link {
-  color: #61dafb;
+.subpict{
+  position: absolute;
+  top: 44%;
+  left: 16%;
+  transform: translateX(-50%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* section */
+.outer-pic{
+  position: relative;
+  width: 500px;
+}
+
+.inner-pic{
+  position: absolute;
+  width: 300px;
+  height: 35vh;
+  transform: translateX(-145%);
+}
+
+
+.getstrbtn{
+    width: 28%;
+    height: 2.5rem;
+    color: black;
+    border:  2px solid transparent;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(60deg,  #12C2E9, #c9124c) border-box;
+    font-size: 0.80vw;
+    font-weight: 500;
+    border-radius: 0.2rem;
+}
+
+.iconborder{
+  height:'8vh';
+  width:'4vw';
+  border:  1px solid transparent;
+  background: 
+    linear-gradient(#4A4A4A, #4A4A4A) padding-box,
+    linear-gradient(60deg,  #12C2E9, #c9124c) border-box;
+}
+
+.violetshade{
+  position: absolute;
+  z-index: 5;
+  width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 500px;
+  background-image: radial-gradient(closest-side at 50% 35%,#c891e3,white);
+}
+
+.redshade{
+  position: absolute;
+  z-index: 5;
+  width: 500px;
+  top: 55%;
+  left: 67%;
+  transform: translateY(-50%);
+  height: 500px;
+  background-image: radial-gradient(closest-side at 50% 45%,#f08b91,white);
+}
+
+.blueshade{
+  position: absolute;
+  z-index: 5;
+  width: 500px;
+  top: 30%;
+  height: 500px;
+  background-image: radial-gradient(closest-side at 40% 45%,#9dd4e0,white);
+}
+
+.outerDesign{
+  z-index: 8;
+  position: relative;
 }
